@@ -22,7 +22,6 @@ const sequelize = new Sequelize('todoappdb', 'root', '12345aA*', {
 
 
 const Note = sequelize.define('notes', {
-    // attributes
     Title: {
       type: Sequelize.STRING,
       allowNull: false
@@ -43,5 +42,4 @@ const Note = sequelize.define('notes', {
     timestamps: false
 });
  
-
 module.exports = Note;
